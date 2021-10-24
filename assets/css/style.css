@@ -1,0 +1,401 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #181D23;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.info-top h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-top p {
+  font-size: 1.6rem;
+}
+
+.logo-text {
+  font-size: 3.4rem;
+  text-shadow: 0 0 5px #fff;
+}
+
+.logo p {
+  font-size: 1.8rem;
+}
+
+.panel {
+  width: 1600px;
+  height: 1000px;
+  border: 1px solid #4B5769;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.panel-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #4B5769;
+}
+
+.panel-left .data-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 160px;
+  color: #fff;
+}
+
+.panel-left .data-box .day {
+  font-size: 2rem;
+}
+
+.panel-left .data-box .time {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.panel-left .data-box .date {
+  font-size: 1.8rem;
+}
+
+.panel-right {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#37404c), to(#151a20));
+  background-image: linear-gradient(180deg, #37404c 0%, #151a20 100%);
+}
+
+.panel-right .logo p {
+  font-size: 1.8rem;
+}
+
+.panel-right .logo .logo-text {
+  font-size: 3.4rem;
+  text-shadow: 0 0 5px #fff;
+}
+
+.panel-right .main-stats h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.panel-right .main-stats .main-stat-box {
+  height: 140px;
+  border-radius: 15px;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.panel-right .main-stats .main-stat-box h3 {
+  margin-bottom: 1em;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.panel-right .main-stats .main-stat-box p {
+  font-size: 1.2rem;
+}
+
+.panel-right .main-stats .main-stat-box:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.panel .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 700px;
+}
+
+.panel .menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 30%;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+.panel .menu a:hover {
+  background-image: linear-gradient(160deg, rgba(0, 110, 255, 0.25) 0%, rgba(9, 255, 0, 0.25) 100%);
+}
+
+.panel .menu-item i {
+  font-size: 6rem;
+  margin-bottom: .4em;
+}
+
+.panel .menu-item p {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.panel .info-box h3 {
+  -webkit-box-flex: 2rem;
+      -ms-flex: 2rem;
+          flex: 2rem;
+}
+
+.panel .info-box p {
+  -webkit-box-flex: 1.6rem;
+      -ms-flex: 1.6rem;
+          flex: 1.6rem;
+}
+
+.panel .main-table h3 {
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.panel .main-table .btn {
+  font-size: 1.6rem;
+}
+
+.panel .main-table .dropdown-item {
+  font-size: 1.3rem;
+}
+
+.panel .main-table .table-dark {
+  background-color: transparent;
+}
+
+.panel .main-table .table-dark thead {
+  font-size: 1.4rem;
+}
+
+.panel .main-table .table-dark tbody {
+  font-size: 1.2rem;
+}
+
+.panel .page-link {
+  padding: .5em 1em;
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: #fff;
+  -webkit-transition: color .3s, background-color .3s;
+  transition: color .3s, background-color .3s;
+}
+
+.panel .page-link:hover {
+  color: #ddd;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.panel .aside h3 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.panel .aside .users-online p {
+  font-size: 4rem;
+}
+
+.panel .aside .users-gender i {
+  font-size: 4rem;
+}
+
+.panel .aside .users-gender .fa-male {
+  text-shadow: 0 0 10px #09ff00;
+}
+
+.panel .aside .users-gender .fa-female {
+  text-shadow: 0 0 10px #006eff;
+}
+
+.panel .aside .users-gender p {
+  font-size: 3rem;
+}
+
+.panel .aside .monthly-stats .form-control, .panel .aside .monthly-stats option {
+  font-size: 1.6rem;
+}
+
+.panel .aside .monthly-stats .info {
+  font-size: 1.8rem;
+}
+
+.panel .aside .monthly-stats .number {
+  font-size: 1.4rem;
+}
+
+/* Podstrona post */
+.posts h3 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.posts .featured-post .card-body {
+  font-size: 1.4rem;
+}
+
+.posts .featured-post .card-body .btn {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.posts .featured-post .card-title {
+  font-size: 1.8rem;
+}
+
+.posts .featured-post:hover {
+  background-image: linear-gradient(160deg, rgba(0, 110, 255, 0.25) 0%, rgba(9, 255, 0, 0.25) 100%);
+}
+
+.posts .active-users .card-img {
+  overflow: hidden;
+}
+
+.posts .active-users img {
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: .6;
+  -webkit-transition: opacity .3s, -webkit-transform .3s;
+  transition: opacity .3s, -webkit-transform .3s;
+  transition: opacity .3s, transform .3s;
+  transition: opacity .3s, transform .3s, -webkit-transform .3s;
+}
+
+.posts .active-users img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.posts .active-users .card-body, .posts .active-users btn {
+  font-size: 1.6rem;
+}
+
+.posts .find-post {
+  font-size: 1.4rem;
+}
+
+.posts .find-post input, .posts .find-post .btn, .posts .find-post .dropdown-item {
+  font-size: 1.6rem;
+}
+
+.posts-modal h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.posts-modal p, .posts-modal .btn {
+  font-size: 1.3rem;
+}
+
+.posts-modal .modal-body .btn {
+  text-transform: uppercase;
+}
+
+/* Podstrona users */
+.users-list li {
+  padding: .5em 1em;
+  margin: .5em 1em;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.users-list li:hover {
+  background-image: linear-gradient(160deg, rgba(0, 110, 255, 0.25) 0%, rgba(9, 255, 0, 0.25) 100%);
+}
+
+.users-list p {
+  font-size: 1.8rem;
+}
+
+.users-list .btn {
+  font-size: 1.6rem;
+}
+
+.users-list .list-group-item {
+  border: 1px solid #fff;
+}
+
+.user-search label, .user-search input, .user-search select {
+  font-size: 1.6rem;
+}
+
+.user-search .btn {
+  font-size: 1.4rem;
+}
+
+/* Podstrona users modal */
+.modal-content .card-title {
+  font-size: 2.6rem;
+}
+
+.modal-content label, .modal-content label, .modal-content input, .modal-content .newsletter {
+  font-size: 1.6rem;
+}
+
+.modal-content-footer .btn {
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=style.css.map */
